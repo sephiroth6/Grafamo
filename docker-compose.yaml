@@ -22,6 +22,7 @@ services:
     build:
       context: .
       dockerfile: GrafanaDockerfile
+      env_file: configuration.env
     restart: always
     ports:
       - 3000:3000
