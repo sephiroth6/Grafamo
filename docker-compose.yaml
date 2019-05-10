@@ -19,10 +19,10 @@ services:
     networks:
       - backend
   grafana:
+    env_file: configuration.env
     build:
       context: .
       dockerfile: GrafanaDockerfile
-      env_file: configuration.env
     restart: always
     ports:
       - 3000:3000
