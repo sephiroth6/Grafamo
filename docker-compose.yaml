@@ -1,4 +1,4 @@
-version: '3.5'
+version: '2.4'
 
 services:
   mongo:
@@ -9,15 +9,13 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
       - ~/grafana-mongo:/data/db
-    networks:
-      - backend
+
   mongo-proxy:
     build:
       context: .
       dockerfile: ProxyDockerfile
     restart: always
-    networks:
-      - backend
+
   grafana:
     env_file: configuration.env
     build:
@@ -26,12 +24,3 @@ services:
     restart: always
     ports:
       - 3000:3000
-    networks:
-      - backend
-      - frontend
-networks:
-  frontend:
-    name: frontend-network
-  backend:
-    name: backend-network
-    internal: true
