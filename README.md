@@ -12,9 +12,9 @@ A docker-compose of Grafana with MongoDb datasource that use a middleware npm se
 * Add data source and select mongodb plugin
 * Add follow data for a quick test with the various connections 
 
-## MongoDB datasource for Grafana
+### MongoDB datasource for Grafana
 
-### Examples
+#### Examples
 
 Create a new data source of type MongoDB as shown below. The MongoDB details are :
 
@@ -56,7 +56,7 @@ db.sensor_value.aggregate ( [
 
 `$from` and `$to` are expanded by the plugin as BSON dates based on the range settings on the UI.
 
-## Template Variables
+### Template Variables
 
 `$sensor` and `$host` are template variables that are filled in by Grafana based on the drop down. The sample template queries are shown below. They expect documents to be returned with a single `_id` field.
 
