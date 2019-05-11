@@ -1,12 +1,12 @@
 # Grafamo Project
 
 A docker-compose of Grafana with MongoDb datasource that use a middleware npm server.
+
 Based on [mongodb-grafana](https://github.com/JamesOsgood/mongodb-grafana), allows MongoDB to be used as a data source for Grafana by providing a proxy to convert the Grafana Data source [API](http://docs.grafana.org/plugins/developing/datasources/) into MongoDB aggregation queries.
 
 ## Quickstart Instructions
 
 * Clone Grafamo project
-* Open a command prompt in the mongodb-grafana directory
 * Run `docker-compose up` to start
 * Open the browser, go to http://ip-your-docker-compose-run:3000
 * Dashboard's preview shows plugins already installed

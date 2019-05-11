@@ -10,7 +10,7 @@ services:
     volumes:
       - /var/data/grafamo:/data/db
 
-  mongo-proxy:
+  middleware:
     build:
       context: .
       dockerfile: ProxyDockerfile
