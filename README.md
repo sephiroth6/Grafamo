@@ -7,7 +7,7 @@ A docker-compose of Grafana with MongoDb datasource that use a middleware npm se
 * Clone Grafamo project
 * Open a command prompt in the mongodb-grafana directory
 * Run `docker-compose up` to start
-* Open the browser http://localhost:3000
+* Open the browser, go to http://ip-your-docker-compose-run:3000
 * Dashboard's preview shows plugins already installed
 * Add data source and select mongodb plugin
 * Add follow data for a quick test with the various connections 
@@ -95,12 +95,3 @@ db.sensor_value.aggregate(
 ```    
 
 The dashboard in `examples\Sensor Values Count - Atlas.json` shows this.
-
-
-
-
-
-
-
-
-
