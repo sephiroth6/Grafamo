@@ -2,5 +2,7 @@ FROM grafana/grafana
 
 COPY . /var/lib/grafana/plugins/mongodb-grafana
 
+VOLUME ["/var/lib/grafana", "/var/lib/grafana/plugins", "/var/log/grafana", "/etc/grafana"]
+
 EXPOSE 3000
 

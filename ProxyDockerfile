@@ -8,5 +8,6 @@ EXPOSE 3333
 
 RUN cd /usr/src/mongografanaproxy
 RUN npm install
-RUN npm update
-ENTRYPOINT ["npm","run","server"]
+#RUN npm run server > /dev/null
+
+CMD ["npm","run","server"]
