@@ -2,7 +2,7 @@
 
 A docker-compose of Grafana with MongoDb datasource that use a middleware npm server.
 
-Based on [mongodb-grafana](https://github.com/JamesOsgood/mongodb-grafana), allows MongoDB to be used as a data source for Grafana by providing a proxy to convert the Grafana Data source [API](http://docs.grafana.org/plugins/developing/datasources/) into MongoDB aggregation queries.
+Based on mongodb-grafana, allows MongoDB to be used as a data source for Grafana by providing a proxy to convert the Grafana Data source [API](http://docs.grafana.org/plugins/developing/datasources/) into MongoDB aggregation queries.
 
 ## Quickstart Instructions
 
