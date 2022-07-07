@@ -50,7 +50,7 @@
     "fs": "0.0.1-security",
     "lodash": "^4.17.11",
     "mocha": "^5.2.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb": "^3.2.4",
     "statman-stopwatch": "^2.8.2"
   },
